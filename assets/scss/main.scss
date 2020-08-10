@@ -1,0 +1,45 @@
+#head-main_logo{
+  height: 20px;
+}
+
+.navbar{
+  background-color: #8b0576;
+}
+
+.page-header.content-center.brand{
+  width: 60% !important;
+}
+
+.squares {
+  &.square1{
+    background: linear-gradient(0deg, #ff7b25 0%, #ffa921 100%) !important;
+  }
+  &.square2{
+    background: linear-gradient(0deg, #00c0d2 0%, #0183f8 100%) !important;
+  }
+  &.square3{
+    background: linear-gradient(0deg, #ff2c2c 0%, #b8024b 100%) !important;
+    opacity: 0.5 !important;
+  }
+  &.square4{
+    background: linear-gradient(0deg, #03ff7d 0%, #00e5dd 100%) !important;
+  }
+  &.square5{
+    background: linear-gradient(0deg, #00af25 0%, #00ff7a 100%) !important;
+    opacity: 0.3 !important;
+  }
+  &.square6{
+    background: linear-gradient(0deg, #ff8400 0%, #dcec00 100%) !important;
+  }
+  &.square7{
+    background: linear-gradient(0deg, #0042c6 0%, #d001ff 100%) !important;
+    opacity: 0.5 !important;
+  }
+}
+p{
+  font-size: 18px !important;
+}
+
+#title_header{
+  height: 100vh;
+}
