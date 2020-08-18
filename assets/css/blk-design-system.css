@@ -16012,4 +16012,22 @@ p {
 #title_header {
   height: 100vh; }
 
+#h2-seo {
+  font-weight: normal; }
+
+.page-header .content-center.brand {
+  width: 100%; }
+
+@media only screen and (min-width: 900px) {
+  .h1-seo {
+    font-size: 60px; } }
+
+#whoweare {
+  background: url("../customimg/whoweare_bg.png") no-repeat 0 0; }
+
+.profile-title {
+  position: absolute;
+  top: 110px;
+  left: 60px; }
+
 /*# sourceMappingURL=blk-design-system.css.map */
