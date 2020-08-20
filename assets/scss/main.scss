@@ -144,6 +144,9 @@ p{
   @media only screen and (min-width: 900px) {
     width: 600px;
   }
+  animation: fadeInFromBottom;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
 }
 
 #explore{
@@ -162,6 +165,17 @@ p{
     display: inline-block;
     width: 100%;
   }
+}
+
+@keyframes fadeInFromBottom {
+    from{
+      opacity: 0;
+      transform: translateY(50%);
+    }
+
+    to{
+      opacity: 1;
+    }
 }
 
 @keyframes swing {
