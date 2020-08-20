@@ -111,8 +111,8 @@
       <div class="squares square7"></div>
       <div class = "container">
         <div class = "content-center brand">
-          <h1 class = "h1-seo"> PLAYGROUND </h1>
-          <h3 id = "h2-seo"> Swing Into Action </h3>
+          <img id="main-seo-img" src="assets/customimg/main_logo_white.png">
+          <h3 id = "h2-seo" class="swing"> Swing Into Action </h3>
         </div>
       </div>
     </div>
@@ -139,7 +139,11 @@
       <div class = "section section-basic p-0">
         <div class = "container">
           <h2 class = "title 40px">
-            Explore Playground
+            Explore Playground +
+            <span
+                    class="txt-rotate"
+                    data-period="700"
+                    data-rotate='[ "Public Health", "Environmental Policy", "Human Rights" ]'></span>
           </h2>
         </div>
       </div>
@@ -158,8 +162,8 @@
               <button class = "btn btn-primary btn-goto" href="health.html">Playground & Public Health</button>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-            IMG
+          <div class="col-lg-6 col-md-6 ml-auto mr-auto">
+            <img src="assets/customimg/health_img.jpg" class="h-100">
           </div>
         </div>
       </div>
@@ -169,8 +173,8 @@
     <div class="section section-basic">
       <div class="container align-items-center">
         <div class="row">
-          <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-            VIDEO
+          <div class="col-lg-6 col-md-6">
+            <iframe id="vid-main-iframe" class="mt-3" src="https://www.youtube.com/embed/A2RYZPA7RyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="col-lg-6 col-md-6">
             <h1 class="profile-title text-left">Human Rights</h1>
@@ -197,7 +201,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
-            <iframe id="vid-main-iframe" class="mt-3" src="https://www.youtube.com/embed/A2RYZPA7RyM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="assets/customimg/env_img.jpg" class="h-100">
           </div>
         </div>
       </div>
@@ -299,6 +303,63 @@
         }, 1000);
       }
     }
+
+    var TxtRotate = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function() {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid white }";
+      document.body.appendChild(css);
+    };
   </script>
 </body>
 </html>

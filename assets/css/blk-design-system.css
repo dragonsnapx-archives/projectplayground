@@ -16027,7 +16027,17 @@ p {
 
 #whoweare, #title_header {
   background: url("../customimg/whoweare_bg.png") no-repeat 0 0;
-  background-size: 110%; }
+  background-size: cover; }
+
+#title_header_idx {
+  background: url("../customimg/main_bg.gif") no-repeat 0 0;
+  background-size: cover; }
+
+.index-page {
+  background-color: #3092a2 !important; }
+
+.navbar {
+  background-color: #093f94 !important; }
 
 .profile-title {
   position: absolute;
@@ -16061,5 +16071,74 @@ p {
 
 .dots {
   z-index: -999; }
+
+.footer {
+  background: radial-gradient(ellipse at bottom, #2F7D7D 30%, #173b41 80%); }
+
+.letter {
+  background: url("../customimg/notes_bg.png") repeat 0 0;
+  color: black;
+  padding: 2rem .5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  word-wrap: break-word; }
+
+#main-seo-img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 900px) {
+    #main-seo-img {
+      width: 600px; } }
+
+#explore {
+  height: 100px; }
+
+.swing {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: swing;
+          animation-name: swing; }
+
+@media only screen and (max-width: 768px) {
+  .txt-rotate {
+    display: inline-block;
+    width: 100%; } }
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: rotateX(-110deg);
+            transform: rotateX(-110deg); }
+  30% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg); }
+  70% {
+    -webkit-transform: rotateX(-40deg);
+            transform: rotateX(-40deg); }
+  100% {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); } }
+
+@keyframes swing {
+  0% {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: rotateX(-110deg);
+            transform: rotateX(-110deg); }
+  30% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg); }
+  70% {
+    -webkit-transform: rotateX(-40deg);
+            transform: rotateX(-40deg); }
+  100% {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg); } }
 
 /*# sourceMappingURL=blk-design-system.css.map */
