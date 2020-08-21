@@ -94,7 +94,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4996,7 +4996,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5081,7 +5081,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11245,7 +11245,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Montserrat", sans-serif !important; }
 
 .card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .card p {
   color: rgba(255, 255, 255, 0.8); }
@@ -15975,6 +15975,27 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
 .page-header.content-center.brand {
   width: 60% !important; }
 
+.square-side {
+  z-index: -1;
+  -webkit-animation: move-left-right 6s infinite;
+          animation: move-left-right 6s infinite;
+  height: 300px;
+  width: 300px;
+  opacity: 0.5;
+  opacity: 0.5 !important; }
+
+.square10 {
+  left: 3%;
+  top: -21%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#097caa), to(#9aeadc)) !important;
+  background: linear-gradient(0deg, #097caa 0%, #9aeadc 100%) !important; }
+
+.square11 {
+  right: 3%;
+  top: 10%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#c67af6), to(#9e9afc)) !important;
+  background: linear-gradient(0deg, #c67af6 0%, #9e9afc 100%) !important; }
+
 .squares.square1 {
   background: -webkit-gradient(linear, left bottom, left top, from(#ff7b25), to(#ffa921)) !important;
   background: linear-gradient(0deg, #ff7b25 0%, #ffa921 100%) !important; }
@@ -16030,7 +16051,7 @@ p {
   background-size: cover; }
 
 #title_header_idx {
-  background: url("../customimg/main_bg.gif") no-repeat 0 0;
+  background: url("../customimg/alt_main_bg_1.png") no-repeat 0 0;
   background-size: cover; }
 
 .index-page {
@@ -16162,5 +16183,23 @@ p {
             transform-origin: top;
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg); } }
+
+p {
+  font-weight: 400 !important; }
+
+a {
+  font-weight: 700 !important; }
+
+.health {
+  background: url("../customimg/health_bg_alt.png") no-repeat 0 0;
+  background-size: cover; }
+
+.env {
+  background: url("../customimg/env_bg.png") no-repeat 0 0;
+  background-size: cover; }
+
+.rights {
+  background: url("../customimg/rights_bg.png") no-repeat 0 0;
+  background-size: cover; }
 
 /*# sourceMappingURL=blk-design-system.css.map */

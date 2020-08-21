@@ -11,8 +11,10 @@
     PLAYGROUND
   </title>
   <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Nucleo Icons -->
   <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
@@ -50,11 +52,11 @@
           </div>
         </div>
         <ul class="navbar-nav">
-          <li class="nav-item p-0 float-left">
-            <a class="nav-link" href="about.html">
-              About Us
-            </a>
-          </li>
+<!--          <li class="nav-item p-0 float-left">-->
+<!--            <a class="nav-link" href="about.html">-->
+<!--              About Us-->
+<!--            </a>-->
+<!--          </li>-->
           <li class="nav-item p-0 float-left">
             <a class="nav-link" href="health.html">
               Health
@@ -117,22 +119,26 @@
       </div>
     </div>
     <div class = "main">
-      <div id="whoweare" class = "section section-basic">
+      <div id="" class = "section section-basic">
         <div class = "container">
+          <div class="squares square-side square10"></div>
           <h2 class = "title">
             Who We Are
           </h2>
-          <p>
+          <p data-aos="fade-right">
             Playground is a student-led nonprofit organization committed to bringing social change. When we were kids, the playground was a space for unbound creativity and meaningful collaboration. Now, as we develop as global leaders, the world has become our playground. By tapping into the infinite potential of imagination, we seek to discover new approaches to the world’s most pressing issues. Exploring new opportunities, we aim to apply our ingenuity and creativity to develop innovative yet tangible solutions to improve the world.          </p>
         </div>
       </div>
       <img class = "path" src="assets/img/path4.png">
       <div class = "section section-basic">
+
         <div class = "container">
           <h2 class = "title">
             What We Do
           </h2>
-          <p>
+          <div class="squares square-side square11"></div>
+
+          <p data-aos="fade-right">
             Playground believes that regardless of age, race, gender, or level of experience, everyone has the ability to make meaningful changes to this world through collaboration and creativity. As developing student leaders looking ahead to a new decade, Playground believes that some of the most important issues to address are public health, human rights, and environmental policy. In each of these categories, we organized an event to raise awareness and make a direct impact on society’s well-being.
         </div>
       </div>
@@ -156,7 +162,7 @@
           <div class="col-lg-6 col-md-6">
             <h1 class="profile-title text-left">Public Health</h1>
             <h5 class="text-on-back">01</h5>
-            <p class="profile-description">Due to fears over COVID-19, the number of blood donors has significantly declined in Korea over the past few months. According to the Korean Red Cross, the number of donors between January and May fell by over 113,000 compared to last year, while 145 organizations canceled plans to donate blood. Blood supply levels of hospitals have reached dangerously low levels during critical times.
+            <p class="profile-description" data-aos="fade-right" >Due to fears over COVID-19, the number of blood donors has significantly declined in Korea over the past few months. According to the Korean Red Cross, the number of donors between January and May fell by over 113,000 compared to last year, while 145 organizations canceled plans to donate blood. Blood supply levels of hospitals have reached dangerously low levels during critical times.
             </p>
             <div class="btn-wrapper profile pt-3">
               <button class = "btn btn-primary btn-goto" href="health.html">Playground & Public Health</button>
@@ -179,7 +185,7 @@
           <div class="col-lg-6 col-md-6">
             <h1 class="profile-title text-left">Human Rights</h1>
             <h5 class="text-on-back">02</h5>
-            <p class="profile-description">Out of the stereotypes that exist in current society, those related to single teenage mothers are some of the strongest, propelling many pregnant teenagers to have an abortion. Even in Korea, where abortion is mostly illegal, around 80% of pregnant teenagers have an abortion. On top of this social stigma, single teenage mothers face overwhelming financial problems. However, government support for teenage mothers falls well under the international human rights guidelines, forcing single teenage mothers to give up their children to orphanages.
+            <p class="profile-description" data-aos="fade-left">Out of the stereotypes that exist in current society, those related to single teenage mothers are some of the strongest, propelling many pregnant teenagers to have an abortion. Even in Korea, where abortion is mostly illegal, around 80% of pregnant teenagers have an abortion. On top of this social stigma, single teenage mothers face overwhelming financial problems. However, government support for teenage mothers falls well under the international human rights guidelines, forcing single teenage mothers to give up their children to orphanages.
             </p>
             <div class="btn-wrapper profile pt-3">
               <button class = "btn btn-primary btn-goto" href="humanrights.html">Playground & Human Rights</button>
@@ -194,7 +200,7 @@
           <div class="col-lg-6 col-md-6">
             <h1 class="profile-title text-left">Environmental Policy</h1>
             <h5 class="text-on-back">03</h5>
-            <p class="profile-description"> Excess plastic waste is one of the most serious environmental problems that exist in this world, affecting developing countries especially. South Korea, one of the world’s largest consumers of single-use plastic, is facing its own plastic waste crisis, holding around 1.2 million tons of plastic waste across 235 garbage mountains. In response to this crisis, the Korean government has pledged to reduce the amount of plastic waste by 50% by 2030. However, without strict regulations in place, corporations are still free to produce as much plastic waste as they please.
+            <p class="profile-description" data-aos="fade-right"> Excess plastic waste is one of the most serious environmental problems that exist in this world, affecting developing countries especially. South Korea, one of the world’s largest consumers of single-use plastic, is facing its own plastic waste crisis, holding around 1.2 million tons of plastic waste across 235 garbage mountains. In response to this crisis, the Korean government has pledged to reduce the amount of plastic waste by 50% by 2030. However, without strict regulations in place, corporations are still free to produce as much plastic waste as they please.
             </p>
             <div class="btn-wrapper profile pt-3">
               <button class = "btn btn-primary btn-goto" href="environment.html">Playground & Environment</button>
@@ -219,11 +225,11 @@
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">
-                  About Us
-                </a>
-              </li>
+<!--              <li class="nav-item">-->
+<!--                <a href="about.html" class="nav-link">-->
+<!--                  About Us-->
+<!--                </a>-->
+<!--              </li>-->
               <li class="nav-item">
                 <a href="health.html" class="nav-link">
                   Health
@@ -250,20 +256,20 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3">
-            <h3 class="title">Follow us:</h3>
-            <div class="btn-wrapper profile">
-              <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
-                <i class="fab fa-dribbble"></i>
-              </a>
-            </div>
-          </div>
+<!--          <div class="col-md-3">-->
+<!--            <h3 class="title">Follow us:</h3>-->
+<!--            <div class="btn-wrapper profile">-->
+<!--              <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">-->
+<!--                <i class="fab fa-twitter"></i>-->
+<!--              </a>-->
+<!--              <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us">-->
+<!--                <i class="fab fa-facebook-square"></i>-->
+<!--              </a>-->
+<!--              <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">-->
+<!--                <i class="fab fa-dribbble"></i>-->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </div>-->
         </div>
       </div>
     </footer>
@@ -293,6 +299,7 @@
       $('.btn-goto').click(function(){
         location.href = $(this).attr('href');
       });
+      AOS.init();
     });
 
     function scrollToDownload() {
