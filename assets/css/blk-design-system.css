@@ -15969,6 +15969,9 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
 #head-main_logo {
   height: 20px; }
 
+html {
+  scroll-behavior: smooth; }
+
 .navbar {
   background-color: #8b0576; }
 
@@ -16046,7 +16049,7 @@ p {
 .nav-item {
   cursor: default !important; }
 
-#whoweare, #title_header {
+#title_header {
   background: url("../customimg/whoweare_bg.png") no-repeat 0 0;
   background-size: cover; }
 
