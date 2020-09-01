@@ -97,9 +97,11 @@ p{
 }
 
 #title_header_idx{
-  background: url('../customimg/alt_main_bg_1.png') no-repeat 0 0;
+  background: url('../customimg/main_bg.png') no-repeat 0 0;
   background-size: cover;
 }
+
+
 
 .index-page{
   background-color: #3092a2 !important;
@@ -113,6 +115,10 @@ p{
   position: absolute;
   top: 110px;
   left: 60px;
+}
+
+.title{
+  text-align: center;
 }
 
 .40px{
@@ -147,6 +153,13 @@ p{
 
 .dots{
   z-index: -999;
+}
+
+.big-text{
+  font-size: 35px !important;
+  @media only screen and (max-width: 780px) {
+    font-size: 23px !important;
+  }
 }
 
 .footer{
@@ -234,7 +247,7 @@ a{
 }
 
 .health{
-  background: url('../customimg/health_bg_alt.png') no-repeat 0 0;
+  background: url('../customimg/health_bg.png') no-repeat 0 0;
   background-size: cover;
 }
 
@@ -246,4 +259,21 @@ a{
 .rights{
   background: url('../customimg/rights_bg.png') no-repeat 0 0;
   background-size: cover;
+}
+
+.icon_img{
+  height: 110px;
+  margin: 0 4rem;
+  @media only screen and (max-width: 768px){
+    height: 60px;
+    margin: 0 1.25rem;
+    > p{
+      font-size: 13px !important;
+    }
+  }
+}
+
+.flex{
+  margin-top: 2rem;
+  display: flex;
 }
