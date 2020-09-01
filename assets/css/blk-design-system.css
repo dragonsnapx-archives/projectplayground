@@ -8284,7 +8284,7 @@ button.bg-darker:focus {
 .font-italic {
   font-style: italic !important; }
 
-.text-white {
+.text-white, #h2-seo, .h1-seo {
   color: #ffffff !important; }
 
 .text-primary {
@@ -8341,10 +8341,10 @@ a.text-dark:hover, a.text-dark:focus {
 a.text-default:hover, a.text-default:focus {
   color: #243152 !important; }
 
-.text-white {
+.text-white, #h2-seo, .h1-seo {
   color: #ffffff !important; }
 
-a.text-white:hover, a.text-white:focus {
+a.text-white:hover, a#h2-seo:hover, a.h1-seo:hover, a.text-white:focus, a#h2-seo:focus, a.h1-seo:focus {
   color: #e6e6e6 !important; }
 
 .text-neutral {
@@ -15978,6 +15978,15 @@ html {
 .page-header.content-center.brand {
   width: 60% !important; }
 
+.index-page {
+  background-color: #f1f1f1 !important; }
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #3092a2 !important; }
+
+.btn {
+  color: white !important; }
+
 .square-side {
   z-index: -1;
   -webkit-animation: move-left-right 6s infinite;
@@ -16056,9 +16065,6 @@ p {
 #title_header_idx {
   background: url("../customimg/main_bg.png") no-repeat 0 0;
   background-size: cover; }
-
-.index-page {
-  background-color: #3092a2 !important; }
 
 .navbar {
   background-color: #093f94 !important; }
@@ -16242,16 +16248,42 @@ a {
     height: 400px;
     width: 100vw; } }
 
-@media only screen and (max-width: 768px) {
-  .vid-text {
-    padding: .5rem;
-    text-align: center; } }
+.vid-text > p {
+  border-left: 3px solid #3092a2;
+  padding-left: 1rem !important; }
+  @media only screen and (max-width: 768px) {
+    .vid-text > p {
+      padding: .5rem;
+      text-align: center; } }
 
 .stretch {
   max-width: 100% !important;
   width: 100% !important; }
 
 a {
-  color: white !important; }
+  color: #3092a2 !important; }
+  a.nav-link {
+    color: white !important; }
+
+.cp {
+  font-size: 14px !important; }
+
+.grey-bg {
+  background-color: #d5d5d5; }
+
+.brackets::before {
+  content: '[';
+  left: 0; }
+
+.brackets::after {
+  content: ']';
+  right: 0; }
+
+.brackets::before, .brackets::after {
+  color: #3092a2 !important;
+  font-weight: 300 !important;
+  position: absolute;
+  top: -20%;
+  font-size: 470px; }
 
 /*# sourceMappingURL=blk-design-system.css.map */

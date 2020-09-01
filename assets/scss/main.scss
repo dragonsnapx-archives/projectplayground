@@ -14,6 +14,18 @@ html{
   width: 60% !important;
 }
 
+.index-page{
+  background-color: #f1f1f1 !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  color: #3092a2 !important;
+}
+
+.btn{
+  color: white !important;
+}
+
 .square-side{
   z-index: -1;
   animation: move-left-right 6s infinite;
@@ -70,6 +82,7 @@ p{
 }
 
 #h2-seo{
+  @extend .text-white;
   font-weight: normal;
 }
 
@@ -78,6 +91,7 @@ p{
 }
 
 .h1-seo{
+  @extend .text-white;
   @media only screen and (min-width: 900px){
     font-size: 60px;
   }
@@ -99,12 +113,6 @@ p{
 #title_header_idx{
   background: url('../customimg/main_bg.png') no-repeat 0 0;
   background-size: cover;
-}
-
-
-
-.index-page{
-  background-color: #3092a2 !important;
 }
 
 .navbar{
@@ -294,9 +302,13 @@ a{
 }
 
 .vid-text{
-  @media only screen and (max-width: 768px){
-    padding: .5rem;
-    text-align: center;
+  >p{
+    border-left: 3px solid #3092a2;
+    padding-left: 1rem !important;
+    @media only screen and (max-width: 768px){
+      padding: .5rem;
+      text-align: center;
+    }
   }
 }
 .stretch{
@@ -305,5 +317,34 @@ a{
 }
 
 a{
-  color: white !important;
+  color: #3092a2 !important;
+  &.nav-link{
+    color: white !important;
+  }
+}
+
+.cp{
+  font-size: 14px !important;
+}
+
+.grey-bg{
+  background-color: #d5d5d5;
+}
+
+.brackets{
+  &::before{
+    content: '[';
+    left: 0;
+  }
+  &::after{
+    content: ']';
+    right: 0;
+  }
+  &::before, &::after{
+    color: #3092a2 !important;
+    font-weight: 300 !important;
+    position: absolute;
+    top: -20%;
+    font-size: 470px;
+  }
 }
