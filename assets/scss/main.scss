@@ -277,3 +277,21 @@ a{
   margin-top: 2rem;
   display: flex;
 }
+
+.vid{
+  @media only screen and (max-width: 768px){
+    height: 400px;
+    width: 100vw;
+  }
+}
+
+.vid-text{
+  @media only screen and (max-width: 768px){
+    padding: .5rem;
+    text-align: center;
+  }
+}
+.stretch{
+  max-width: 100% !important;
+  width: 100% !important;
+}
