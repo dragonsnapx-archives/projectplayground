@@ -271,6 +271,14 @@ a{
       font-size: 13px !important;
     }
   }
+  >img{
+    border-radius: 100px;
+    &:hover{
+      border-radius: 80px;
+      background-color: rgba(66, 66, 66, 0.38);
+      transition: .5s;
+    }
+  }
 }
 
 .flex{
@@ -294,4 +302,8 @@ a{
 .stretch{
   max-width: 100% !important;
   width: 100% !important;
+}
+
+a{
+  color: white !important;
 }

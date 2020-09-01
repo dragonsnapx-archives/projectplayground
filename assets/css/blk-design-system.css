@@ -16223,6 +16223,13 @@ a {
       margin: 0 1.25rem; }
       .icon_img > p {
         font-size: 13px !important; } }
+  .icon_img > img {
+    border-radius: 100px; }
+    .icon_img > img:hover {
+      border-radius: 80px;
+      background-color: rgba(66, 66, 66, 0.38);
+      -webkit-transition: .5s;
+      transition: .5s; }
 
 .flex {
   margin-top: 2rem;
@@ -16243,5 +16250,8 @@ a {
 .stretch {
   max-width: 100% !important;
   width: 100% !important; }
+
+a {
+  color: white !important; }
 
 /*# sourceMappingURL=blk-design-system.css.map */
